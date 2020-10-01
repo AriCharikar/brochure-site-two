@@ -1,0 +1,567 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+.wrapper {
+    max-width: 1140px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+* {
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Base code */
+
+h1 {
+    font-size: calc(5rem + 1vw);
+    font-family: 'Sirin Stencil', sans-serif;
+    text-transform: uppercase;
+    color: #00476A;
+}
+
+h2 {
+    font-size: 4rem;
+    font-family: 'Sirin Stencil', sans-serif;
+    text-transform: uppercase;
+    color: #00476A;
+}
+
+h3 {
+    font-size: calc(2.8rem + 1vw);
+    font-family: 'Sirin Stencil', sans-serif;
+}
+
+h4 {
+    font-size: 3rem;
+    font-family: 'Lato', sans-serif;
+}
+
+h4::after {
+    content: '';
+    display: block;
+    height: calc(0.3rem + 0.2vh);
+    background-color: #00C6FF;
+    width: 10%;
+    margin: 2vh auto;
+}
+
+h5 {
+    font-size: 2rem;
+    font-family: 'Lato', sans-serif;
+}
+
+p {
+    font-size: 2.3rem;
+    font-family: 'Lato', sans-serif;
+}
+
+nav {
+    font-size: 2.5rem;
+}
+
+button {
+    background-color: #00476A;
+    color: #FFFFFF;
+    padding: 8px 15px;
+    font-size: 2rem;
+}
+
+button:hover {
+    border: 2px solid #00C6FF;
+    background-color: #FFFFFF;
+    color: #00476A;
+}
+
+/* Font sizes and styles */
+
+header {
+    background-image: url(./assets/header-image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 100%;
+    background-position: 20% bottom;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+#header-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    margin: 0;
+}
+
+header nav ul {
+    display: flex;
+    margin: 0;
+}
+
+header nav li {
+    margin-left: 4vw;
+}
+
+header nav a {
+    color: #00476A;
+}
+
+header nav a::after {
+    content: '';
+    display: block;
+    height: calc(0.3rem + 0.2vh);
+    width: 0%;
+    background-color: #00C6FF;
+    transition: all 0.5s ease-in-out;
+}
+
+header nav a:hover::after {
+    width: 100%;
+}
+
+header h1 {
+    width: 55%;
+}
+
+/* header CSS */
+
+#section-1 {
+    text-align: center;
+    padding-top: 8vh;
+    padding-bottom: 16vh;
+}
+
+#section-1 h2 {
+    width: 35%;
+    margin: 0 auto;
+}
+
+#section-1 h3 {
+    display: inline;
+    font-size: 0px;
+    width: 75%;
+    margin: 0 auto;
+}
+
+#section-1 p {
+    position: relative;
+    width: 70%;
+    margin: 30px auto;
+}
+
+#section-1 p::before {
+    content: '<';
+    font-size: 100px;
+    display: inline-block;
+    position: absolute;
+    top: -15%;
+    left: -15%;
+}
+
+#section-1 p::after {
+    content: '>';
+    font-size: 100px;
+    display: inline-block;
+    position: absolute;
+    top: -15%;
+    right: -15%;
+}
+
+/* Section 1 CSS */
+
+#section-2 {
+    background-color: #E6F8FC;
+    padding-bottom: 250px;
+    padding-top: 50px;
+}
+
+#sec-2-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#sec-2-box h5 {
+    background-color: #222428;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+#turkey {
+    position: absolute;
+    left: 0;
+    bottom: 10%;
+}
+
+#morocco {
+    position: absolute;
+    left: calc(100% / 3);
+    bottom: 10%;
+}
+
+#senegal {
+    position: absolute;
+    left: calc(100% / 3 * 2);
+    bottom: 10%;
+}
+
+#turkey2, #morocco2, #senegal2 {
+    display: none;
+
+}
+
+#section-2 h2 {
+    text-align: center;
+}
+
+#section-2 img {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+/* Section 2 CSS */
+
+#section-3 {
+    padding-bottom: 8vh;
+}
+
+#sec-3-box {
+    display: inline-flex;
+    flex-direction: row;
+}
+
+#section-3 img {
+    height: 600px;
+    width: 500px;
+    border: 4px solid black;
+    position: relative;
+    bottom: 5%;
+    right: 4%;
+}
+
+#vase {
+    background-color: #00C6FF;
+    margin-top: -50px;
+    margin-right: 70px;
+    height: 600px;
+}
+
+/* Section 3 CSS */
+
+footer {
+    text-align: center;
+}
+
+#footer-color1 {
+    background-color: #222428;
+}
+
+#footer-color2 {
+    background-color: #0E191E;
+}
+
+#footer-color2 h3 {
+    color: #FFFFFF;
+    font-size: 4rem;
+}
+
+footer h2 {
+    color: #FFFFFF;
+}
+
+#name-form, #email-form {
+    width: 40%;
+}
+
+#name-form {
+    margin-right: 1%;
+}
+
+#email-form {
+    margin-left: 1%;
+}
+
+textarea {
+    resize: none;
+    width: 82%;
+    background-color: #222428;
+    border: 3px #00C6FF solid;
+    margin-top: 2%;
+}
+
+input {
+    border: 3px #00C6FF solid;
+    background-color: #222428;
+    height: 6rem;
+}
+
+::placeholder {
+    color: #FFFFFF;
+}
+
+#submit-button {
+    background-color: #00476A;
+    color: #FFFFFF;
+    border: 0px;
+    height: 4rem;
+    width: 100px;
+    margin-top: 2%;
+}
+
+
+/* Footer CSS */
+
+@media (max-width: 940px){
+    nav {
+        font-size: 2.2rem;
+    }
+
+    h1 {
+        font-size: calc(4rem + 1vw);
+    }
+
+    h3 {
+        font-size: calc(2.2rem + 1vw);
+    }
+
+    h4::after {
+        width: 13%;
+    }
+
+    button {
+      padding: 16px 30px;
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    #section-1 h2 {
+        width: 55%;
+    }
+
+    #section-1 p::before {
+        display: none;
+    }
+
+    #section-1 p::after {
+        display: none;
+    }
+
+    #section-1 h3 {
+        display: block;
+        font-size: 75px;
+        color: black;
+        margin-bottom: 4vh;
+    }
+
+    #sec-2-box {
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    #section-2 img {
+        width: 400px;
+        height: 400px;
+        margin-bottom: 100px;
+    }
+
+    #turkey, #morocco, #senegal {
+        display: none;
+    }
+
+    #turkey2, #morocco2, #senegal2 {
+        display: block;
+        position: absolute;
+        width: 30%;
+        text-align: center;
+        font-size: 2.5rem;
+
+    }
+
+    #turkey2 {
+        top: 22%;
+    }
+
+    #morocco2 {
+        top: 56%;
+    }
+
+    #senegal2 {
+        top: 89%;
+    }
+
+    #sec-3-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #vase {
+        margin-right: 0;
+        height: 400px;
+    }
+
+    #section-3 img {
+        position: relative;
+        height: 400px;
+        width: 333px;
+        bottom: 40px;
+        right: 30px;
+    }
+
+    #sec-3-text {
+        text-align: center;
+        width: 80%;
+    }
+
+    #name-form, #email-form {
+        width: 82%;
+    }
+
+    #name-form {
+        margin-right: 0;
+        margin-bottom: 2%;
+    }
+
+    #email-form {
+        margin-left: 0;
+    }
+
+
+}
+
+@media (max-width: 768px){
+    header {
+        height: 500px;
+    }
+
+    nav {
+        font-size: 1.9rem;
+    }
+
+    h1 {
+        font-size: calc(3rem + 1vw);
+    }
+
+    h3 {
+        font-size: calc(2rem + 1vw);
+    }
+
+    #section-1 h2 {
+      width: 75%;
+    }
+
+    #section-1 p {
+        width: 80%;
+    }
+
+    #section-2 img {
+        width: 320px;
+        height: 320px;
+    }
+
+    #turkey2, #morocco2, #senegal2 {
+        font-size: 1.5rem;
+    }
+
+    #section-3 img {
+        height: 300px;
+        width: 250px;
+    }
+
+    #vase {
+        height: 300px;
+    }
+
+
+
+}
+
+@media (max-width: 480px){
+  header {
+      height: 400px;
+  }
+
+    nav {
+        display: none;
+    }
+
+    h1 {
+        font-size: calc(2.6rem + 1vw);
+    }
+
+    h4::after {
+        width: 24%;
+    }
+
+    #section-1 h2 {
+      width: 90%;
+    }
+
+    #section-2 img {
+        width: 250px;
+        height: 250px;
+    }
+
+    #turkey2, #morocco2, #senegal2 {
+        font-size: 1rem;
+    }
+
+    #turkey2 {
+        top: 20%;
+    }
+
+    #morocco2 {
+        top: 54%;
+    }
+
+    #senegal2 {
+        top: 87%;
+    }
+
+    #section-3 img {
+        height: 200px;
+        width: 166px;
+        bottom: 20px;
+        right: 15px;
+    }
+
+    #vase {
+        height: 200px;
+    }
+
+
+
+}
+
+/* Media queries */
